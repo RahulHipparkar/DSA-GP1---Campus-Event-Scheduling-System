@@ -1,0 +1,14 @@
+# Campus Event Scheduling System – Requirements (LTS stable)
+python==3.11.9
+
+# Core scientific & plotting stack
+numpy==1.26.4
+matplotlib==3.9.2
+pandas==2.2.3
+
+# Testing
+pytest==8.3.2
+
+# Code quality
+black==24.8.0
+flake8==7.1.1
