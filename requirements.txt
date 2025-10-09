@@ -1,6 +1,4 @@
 # Campus Event Scheduling System – Requirements (LTS stable)
-python==3.11.9
-
 # Core scientific & plotting stack
 numpy==1.26.4
 matplotlib==3.9.2
