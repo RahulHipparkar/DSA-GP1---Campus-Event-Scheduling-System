@@ -1,4 +1,7 @@
-from src.models.Get_Key import key
+import sys
+import os
+from sorting.Get_Key import key
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath('src/models/Get_Key.py'))))
 def insertion_sort(a):
   n = a.__len__()
   for i in range(1,n):

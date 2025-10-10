@@ -1,0 +1,14 @@
+{
+    // Tell VS Code that "src" is a top-level package
+    "python.autoComplete.extraPaths": ["./src"],
+    "python.analysis.extraPaths": ["./src"],
+
+    // Make sure VS Code uses your virtual environment
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+
+    // Start all terminals in the project root
+    "terminal.integrated.cwd": "${workspaceFolder}",
+
+    // Optional: load environment variables from .env (helps imports)
+    "python.envFile": "${workspaceFolder}/.env"
+}
