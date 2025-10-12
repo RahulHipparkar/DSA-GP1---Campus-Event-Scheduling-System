@@ -41,7 +41,7 @@ class LinkedList:
     self.length+=1
 
 
-  def getAt(self,index):
+  def get(self,index):
     current = self.head
     for i in range(index):
       current = current.next

@@ -7,5 +7,6 @@ class Event:
     self.location = location
 
   def __repr__(self):
-    # return a list-like display
-    return f"[{self.id}, '{self.title}', '{self.date}', '{self.time}', '{self.location}']"
+    # return a event object as dictionary
+     e = {"Id":self.id, "Title":self.title, "Date":self.date,"Time":self.time,"Location":self.location}
+     return f"{e}"
