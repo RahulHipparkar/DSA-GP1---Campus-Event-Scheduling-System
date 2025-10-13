@@ -14,7 +14,6 @@ def sort(a):
   return a
 
 def binary_search(arr,target_id):
-  arr = sort(arr)
   start = 0
   end = arr.__len__()-1
   while start <= end:
