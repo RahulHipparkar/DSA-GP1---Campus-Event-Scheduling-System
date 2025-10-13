@@ -11,6 +11,10 @@ def find_conflicts(events):
       time_to_events[key] = []
     time_to_events[key].append(ev)
   overlapping = {k:v for k,v in time_to_events.items() if len(v)>=2}
+  return overlapping
+
+def display_conflicts(events):
+  overlapping = find_conflicts(events)
   for (date, time), conflicts in overlapping.items():
     print(f"\nConflicted events on {date}")
     for e in conflicts:

@@ -1,4 +1,4 @@
-from models.ArrayList import DynamicArray
+from src.models.ArrayList import DynamicArray
 def slice_array(A,start,stop,step=1):
   result = DynamicArray()
   n = A.__len__()

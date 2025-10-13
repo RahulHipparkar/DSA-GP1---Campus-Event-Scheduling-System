@@ -3,19 +3,21 @@ import os, sys
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
-from models.event import Event
-from models.ArrayList import DynamicArray
-from models.LinkedList import LinkedList
-from searching.Linear_Search import linear_search
-from searching.Binary_Search import binary_search
-from sorting.Get_Key import key
-# from sorting.Insertion_Sort import insertion_sort
-# from sorting.Slicing import slice_array
-# from sorting.Merge_Sort import merge_sort
-# from sorting.Quick_Sort import quick_sort
-from sorting.Insertion_Sort_Linked_List import insertion_sort_linked_list
-from sorting.Merge_Sort_Linked_List import merge_sort_list
-from searching.Conflict_Detection import display_conflicts
+
+from src.models.event import Event
+from src.models.ArrayList import DynamicArray
+from src.models.LinkedList import LinkedList
+from src.searching.Linear_Search import linear_search
+from src.searching.Binary_Search import binary_search
+from src.sorting.Get_Key import key
+# from src.sorting.Insertion_Sort import insertion_sort
+# from src.sorting.Slicing import slice_array
+# from src.sorting.Merge_Sort import merge_sort
+# from src.sorting.Quick_Sort import quick_sort
+from src.sorting.Insertion_Sort_Linked_List import insertion_sort_linked_list
+from src.sorting.Merge_Sort_Linked_List import merge_sort_list
+from src.sorting.Quick_Sort_Linked_List import quickSort
+from src.searching.Conflict_Detection import display_conflicts
 e1 = Event(101,'Midterm','2025-10-06','18:00','Duane')
 e2 = Event(102, 'Carrer Event', '2025-10-06', '12:00','UMC' )
 e3 = Event(103,'In class Activity', '2025-10-05', '11:00', 'Beca')
@@ -25,8 +27,8 @@ ll.push(e1)
 ll.append(e2)
 ll.append(e3)
 ll.insertAt(1,e4)
-# ll.head = merge_sort_list(ll.head)
-# print(ll)
+ll.head = quickSort(ll.head)
+print(ll)
 a = DynamicArray()
 a.append(e1)
 a.append(e2)

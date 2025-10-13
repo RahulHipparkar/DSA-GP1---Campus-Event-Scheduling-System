@@ -20,7 +20,7 @@ def binary_search(arr,target_id):
   while start <= end:
     mid = (start+end)//2
     if arr.get(mid).id==target_id:
-      return f"Event with id {arr.get(mid).id} was found at index {mid}"
+      return f"Event with id {arr.get(mid).id} was found"
     elif target_id < arr.get(mid).id:
       end = mid-1
     else:

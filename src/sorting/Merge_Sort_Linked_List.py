@@ -1,5 +1,5 @@
-from sorting.Get_Key import key
-from models.LinkedList import Node
+from src.sorting.Get_Key import key
+from src.models.LinkedList import Node
 def merge_sort_list(head):
   if not head or not head.next:
     return head

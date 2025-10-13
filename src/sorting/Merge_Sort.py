@@ -1,8 +1,8 @@
 # import sorting.Slicing
 # import sorting.Get_Key 
-from sorting.Get_Key import key
-from sorting.Slicing import slice_array
-from models.ArrayList import DynamicArray
+from src.sorting.Get_Key import key
+from src.sorting.Slicing import slice_array
+from src.models.ArrayList import DynamicArray
 def merge(a,b):
   n = a.__len__()
   m = b.__len__()

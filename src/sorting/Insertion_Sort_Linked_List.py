@@ -1,6 +1,6 @@
-from sorting.Get_Key import key
-from models.LinkedList import Node
-def insertion_sort_list(List):
+from src.sorting.Get_Key import key
+from src.models.LinkedList import Node
+def insertion_sort_linked_list(List):
   dummy = Node(0)
   cur = List.head
 
