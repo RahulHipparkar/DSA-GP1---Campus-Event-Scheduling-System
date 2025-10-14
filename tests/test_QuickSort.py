@@ -12,7 +12,7 @@ def sample_events():
   return arr
 
 def test_quick_sort(sample_events):
-  sorted_events = quick_sort(sample_events)
+  sorted_events = quick_sort(sample_events,0,len(sample_events)-1)
   result = [(e.date,e.time) for e in sorted_events.list_all()]
   expected = sorted([(e.date, e.time) for e in sample_events.list_all()])
   assert result == expected, "❌ Quick Sort failed to sort dynamic array of events"

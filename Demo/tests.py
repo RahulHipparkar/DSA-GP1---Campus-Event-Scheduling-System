@@ -13,7 +13,7 @@ from src.sorting.Get_Key import key
 # from src.sorting.Insertion_Sort import insertion_sort
 # from src.sorting.Slicing import slice_array
 # from src.sorting.Merge_Sort import merge_sort
-# from src.sorting.Quick_Sort import quick_sort
+from src.sorting.Quick_Sort import quick_sort
 from src.sorting.Insertion_Sort_Linked_List import insertion_sort_linked_list
 from src.sorting.Merge_Sort_Linked_List import merge_sort_list
 from src.sorting.Quick_Sort_Linked_List import quickSort
@@ -28,7 +28,7 @@ ll.append(e2)
 ll.append(e3)
 ll.insertAt(1,e4)
 ll.head = quickSort(ll.head)
-print(ll)
+# print(ll)
 a = DynamicArray()
 a.append(e1)
 a.append(e2)
@@ -43,4 +43,6 @@ events = LinkedList()
 events.append(ex)
 events.append(ey)
 events.append(ez)
-display_conflicts(events)
+# display_conflicts(events)
+arr = quick_sort(a,0,len(a)-1)
+print(arr.list_all())
