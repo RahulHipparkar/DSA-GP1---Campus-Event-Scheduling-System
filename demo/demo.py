@@ -13,9 +13,9 @@ from src.models.LinkedList import LinkedList
 from src.searching.Linear_Search import linear_search
 from src.searching.Binary_Search import binary_search
 from src.sorting.Get_Key import key
-# from src.sorting.Insertion_Sort import insertion_sort
-# from src.sorting.Slicing import slice_array
-# from src.sorting.Merge_Sort import merge_sort
+from src.sorting.Insertion_Sort import insertion_sort
+from src.sorting.Slicing import slice_array
+from src.sorting.Merge_Sort import merge_sort
 from src.sorting.Quick_Sort import quick_sort
 from src.sorting.Insertion_Sort_Linked_List import insertion_sort_linked_list
 from src.sorting.Merge_Sort_Linked_List import merge_sort_list
