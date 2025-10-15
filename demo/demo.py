@@ -1,3 +1,6 @@
+"""
+This file is just for testing the code and different functions
+"""
 import os, sys
 # Go up one level (from demo/ → project_root/)
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
