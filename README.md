@@ -26,6 +26,14 @@ The project consists 5 important folders and files:
 
 | Algorithm                      | Time complexity | Space Complexity |
 | :-------                       | :------:        | -------: |
+| insert operation in dynamic array : insert() function in dynamic array class| O(N)  | O(1), resize : O(N)|
+| delete operation in dynamic array : remove() funtion in dynamic array class |  O(N) |     O(1)      |
+| search by id operation in dynamic array: search_by_id() function in dynamic array class| O(N) | O(1)|
+| list all operation in dynamic array : list_all() function in dynamic array class | O(N) | O(N)    |   
+| insert operation in linked list : insertAt() function in linked list class class| O(N)  | O(1)
+| delete operation in linked list : removeAt() funtion in linked list class class |  O(N) |     O(1)      |
+| search by id operation in linked list : search_by_id() function in linked list class | O(N) | O(1)|
+| list all operation in linked list  : dunder str() function in linked list class | O(N) | O(N)    |    
 | Linear Search                  | O(N)        | O(1)   |
 | Binary Search                  | O(log N)        | O(1)  |
 | Conflict Detection             |  O(N)         | O(N) : using dictionary data structure to find conflicts  |
