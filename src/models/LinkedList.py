@@ -13,7 +13,7 @@ class LinkedList:
   def __len__(self):
     return self.length
 
-  def __str__(self):
+  def __str__(self): # this function performs list_all operation for linked list
     elements = []
     current = self.head
     to_print =""
@@ -21,6 +21,14 @@ class LinkedList:
       to_print+=f"{current.value} -> "
       current = current.next
     return to_print
+  
+  def search_by_id(self,target_id):
+    current = self.head
+    while current:
+      if current.value.id == target_id:
+        return "Event found"
+      current = current.next
+    return "Event not found"
 
 
   def push(self,data):

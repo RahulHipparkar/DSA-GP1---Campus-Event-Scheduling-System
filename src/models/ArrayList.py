@@ -31,6 +31,16 @@ class DynamicArray:
       raise IndexError
     self.A[idx] = item 
 
+  def search_by_id(self,target_id):
+    """
+    This function searches an event by id
+    """
+    for i in range(len(self)):
+      if self.get(i).id == target_id:
+        return 'Event found'
+    return 'Event not found'
+
+
   def append(self, ele):
     """
     This function insert element at the end of the array
